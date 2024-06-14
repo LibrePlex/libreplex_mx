@@ -4,10 +4,11 @@
   "workspaces": [
     "packages/*"
   ],
-    "libreplex_mx:deploy:devnet": "anchor deploy -p libreplex_mx --provider.cluster https://api.devnet.solana.com --provider.wallet ~/.config/solana/libreplex-deployer.json",
+  "scripts": {
+    "libreplex_mx:deploy:devnet": "anchor deploy -p libreplex_mx --provider.cluster https://api.devnet.solana.com --provider.wallet ~/.config/solana/libreplex-deployer.json"
   },
   "dependencies": {
-    "@coral-xyz/anchor": "0.30.0",
+    "@coral-xyz/anchor": "0.29.0",
     "@solana/spl-token": "^0.3.8",
     "@solana/web3.js": "^1.73.0"
   },

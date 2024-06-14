@@ -457,7 +457,6 @@ pub async fn initialise_deployment(
 pub async fn refresh_blockhash_and_warp(context: &mut ProgramTestContext, slot: &mut u64) -> Hash {
     // context.warp_to_slot(*slot).unwrap();
     context.warp_forward_force_reward_interval_end().unwrap();
-    context.warp_to_epoch(*slot).unwrap();
     *slot += 1;
 
     context
